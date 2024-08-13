@@ -2,10 +2,12 @@ package org.example.interfaces.impl;
 
 import org.example.interfaces.CourseRecommender;
 import org.example.model.Course;
+import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
 import java.util.List;
 
+@Component
 public class CourseRecommenderImpl1 implements CourseRecommender {
 
     public List<Course> recommendedCourses(){
