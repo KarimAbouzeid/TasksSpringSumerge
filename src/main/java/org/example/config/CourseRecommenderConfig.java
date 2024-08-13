@@ -18,7 +18,7 @@ public class CourseRecommenderConfig {
         return new CourseRecommenderImpl1();
     }
 
-
+    @Bean(name = "secondaryRecommender")
     public CourseRecommender secondaryRecommender() {
         return new CourseRecommenderImpl2();
     }

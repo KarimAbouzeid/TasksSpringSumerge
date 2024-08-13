@@ -9,7 +9,6 @@ import java.util.List;
 
 
 
-@Component
 public class CourseRecommenderImpl2 implements CourseRecommender {
 
     public List<Course> recommendedCourses(){
