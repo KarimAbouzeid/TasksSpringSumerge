@@ -12,13 +12,13 @@ import org.springframework.context.annotation.Primary;
 @ComponentScan("org.example.interfaces.impl")
 public class CourseRecommenderConfig {
 
-    @Bean(name = "primaryRecommender")
+
     @Primary
     public CourseRecommender primaryRecommender() {
         return new CourseRecommenderImpl1();
     }
 
-    @Bean(name = "secondaryRecommender")
+
     public CourseRecommender secondaryRecommender() {
         return new CourseRecommenderImpl2();
     }
