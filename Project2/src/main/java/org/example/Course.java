@@ -1,8 +1,12 @@
 package org.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-
+@Configuration
 public class Course {
 
     private int id;
@@ -10,11 +14,16 @@ public class Course {
     private String description;
     private int credits;
 
+
     public Course(int id, String name, String description, int credits) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.credits = credits;
+    }
+
+    public Course(){
+
     }
 
     public int getId() {
